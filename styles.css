@@ -1,4 +1,1601 @@
-@font-face{font-family:Manrope;src:url('assets/fonts/Manrope.woff2') format('woff2');font-weight:200 800;font-display:swap}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:35px}body{margin:0;background:#e7eef2;color:#173c51;font:14px Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased}::selection{color:#edf4f7;background:#173c51}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible,a:focus-visible{outline:2px solid #426e84;outline-offset:6px}h1,h2,p{margin:0}h1,h2{font-weight:400;letter-spacing:-.075em;line-height:1.02}h2{font-size:clamp(52px,6.2vw,102px)}h1 span,h2 span{font-weight:200}button{border-radius:0}.skip{position:fixed;top:-80px;left:12px;z-index:100;background:#173c51;color:#fff;padding:14px}.skip:focus{top:12px}.site-header{position:absolute;z-index:10;top:0;left:0;right:0;display:flex;align-items:center;padding:35px 5%;gap:70px}.logo{font-size:24px;letter-spacing:.09em;font-weight:600;line-height:1}.logo span{font-size:8px;position:relative;top:-13px;margin-left:4px;letter-spacing:0}.header-thought{font-size:9px;line-height:1.6;opacity:.65}.site-header nav{margin-left:auto;display:flex;align-items:center;gap:36px;font-size:11px}.site-header nav>a:not(.nav-practice){border-bottom:1px solid transparent;padding:7px 0}.site-header nav>a:hover{border-color:#173c51}.nav-practice{display:flex;align-items:center;gap:25px;border:1px solid #9cafbb;padding:12px 18px}.nav-practice span{font-size:20px}.water-story{height:225svh;min-height:1500px}.water-stage{height:100svh;min-height:650px;position:sticky;top:0;overflow:hidden;background:radial-gradient(ellipse at 75% 40%,#f6f9fa 0,#e7eef2 55%,#dbe6ed 100%)}#water-canvas{position:absolute;inset:0;z-index:1}#water-canvas canvas{display:block;width:100%;height:100%}.hero-copy{position:absolute;z-index:3;left:8%;top:27%;max-width:590px;will-change:transform,opacity}.eyebrow{font-size:9px;letter-spacing:.12em;line-height:1.7;font-weight:500}.small-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:9px}.hero-copy h1{font-size:clamp(88px,10.1vw,165px);margin:30px 0 32px;letter-spacing:-.085em}.hero-description{font-size:12px;line-height:1.9;opacity:.7}.round-link{display:flex;align-items:center;gap:22px;margin-top:34px;width:max-content;font-size:10px}.round-link i{font-style:normal;border:1px solid #9cafbb;width:40px;height:40px;display:grid;place-items:center;border-radius:50%;font-size:19px;transition:background .2s,color .2s}.round-link:hover i{background:#173c51;color:#fff}.water-caption{position:absolute;right:6%;top:25%;z-index:3;font-size:8px;letter-spacing:.08em}.water-caption>span{display:block;opacity:.55;margin-bottom:18px}.water-caption p{line-height:1.7;letter-spacing:0;font-size:10px}.hero-foot{position:absolute;bottom:30px;left:5%;right:5%;display:flex;align-items:center;justify-content:space-between;font-size:8px;letter-spacing:.07em;z-index:3}.scroll-guide{display:flex;align-items:center;gap:11px;letter-spacing:0}.scroll-guide i{display:block;width:1px;height:33px;background:#9cafbb;position:relative;overflow:hidden}.scroll-guide i:after{content:'';position:absolute;height:8px;width:1px;background:#173c51;top:0;animation:drop 2s infinite}.second-copy{position:absolute;inset:22% 0 auto;text-align:center;z-index:3;opacity:0;transform:translateY(40px);pointer-events:none;will-change:transform,opacity}.second-title{font-size:clamp(65px,8.7vw,140px);font-weight:400;line-height:1;letter-spacing:-.075em;margin-top:22px}.second-title span{font-weight:200}.water-fallback{position:absolute;top:25%;right:10%;width:38vw;aspect-ratio:1;z-index:1;transform:rotate(-28deg)}.water-fallback i{position:absolute;inset:7%;border:40px solid #88aebf;border-radius:50%;box-shadow:inset 12px -7px 18px #315a72,12px 20px 40px #7798aa50,-7px -7px 18px #fff9}.water-fallback i:nth-child(2){inset:17%;border-width:8px;opacity:.3}.water-fallback i:nth-child(3){inset:27%;border-width:3px;opacity:.2}.has-webgl .water-fallback{display:none}.section-space{padding:100px 8%}.section-label{display:flex;justify-content:space-between;border-top:1px solid #afc0cb;padding-top:20px;font-size:8px;letter-spacing:.1em}.approach{background:#d4e1e9}.approach-layout{display:grid;grid-template-columns:1.3fr .6fr;gap:13%;align-items:end;margin:70px 0 95px}.approach h2{font-size:clamp(60px,6.8vw,114px)}.approach-copy{max-width:280px;font-size:12px;line-height:1.9;padding-bottom:4px}.approach-copy p+p{margin-top:18px}.approach-copy>p:first-child{font-size:17px;letter-spacing:-.025em;line-height:1.55}.under-link{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #839eae;font-size:10px;padding:16px 0;margin-top:25px;gap:30px;max-width:100%;width:max-content}.under-link span{font-size:21px;line-height:.8;transition:transform .2s}.under-link:hover span{transform:translate(3px,-3px)}.three-words{display:flex;align-items:center;justify-content:space-between;font-size:clamp(24px,3.3vw,52px);font-weight:300;letter-spacing:-.06em;border-top:1px solid #afc0cb;border-bottom:1px solid #afc0cb;padding:30px 0}.three-words>span:not(:last-child):after{content:'✳';font-size:18px;display:inline-block;margin-left:5vw;position:relative;top:-5px;font-weight:200}.rituals{padding-top:95px;padding-bottom:95px}.ritual-heading{display:flex;justify-content:space-between;align-items:end;margin:60px 0 65px;gap:30px}.ritual-heading>p{font-size:11px;line-height:1.9;margin-right:4%;margin-bottom:7px}.ritual-list{border-top:1px solid #afc0cb}.ritual-row{display:grid;grid-template-columns:.15fr 1fr .65fr 50px;align-items:center;width:100%;text-align:left;border:0;border-bottom:1px solid #afc0cb;background:none;padding:32px 15px 32px 0;transition:background .3s,padding .3s}.ritual-row:hover,.ritual-row[aria-checked=true]{background:#dbe6ec;padding-left:22px;padding-right:22px}.ritual-number{font-size:9px;opacity:.6;align-self:start;margin-top:10px}.ritual-name{font-size:48px;letter-spacing:-.06em;line-height:1.1;font-weight:300}.ritual-name>span{font-size:10px;letter-spacing:0;display:block;line-height:1.8;margin-top:9px}.ritual-pattern{font-size:10px;line-height:1.8;opacity:.65}.ritual-icon{display:grid;place-items:center;width:42px;height:42px;border:1px solid #afc0cb;border-radius:50%;font-size:21px}.ritual-row[aria-checked=true] .ritual-icon{background:#173c51;border-color:#173c51;color:#e7eef2;transform:rotate(45deg)}.ritual-bottom{display:flex;justify-content:space-between;align-items:end;margin-top:25px;gap:30px}.ritual-bottom>p{font-size:10px;line-height:1.8;opacity:.65}.ritual-bottom .under-link{margin:0}.practice{background:#102f42;color:#e3edf2;padding:45px 8% 90px;overflow:hidden}.practice-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #416070;padding-bottom:20px}.practice-top .eyebrow,.practice-mode{font-size:8px;letter-spacing:.1em}.practice-mode{color:#a9c5d6}.practice-layout{display:grid;grid-template-columns:1fr 1fr;gap:5%;align-items:center;margin-top:65px}.practice-information h2{font-size:clamp(52px,5.5vw,91px)}.practice-information>p{font-size:11px;line-height:1.9;color:#abc1cf;margin-top:28px}.duration{border:0;padding:0;margin:40px 0 28px;display:flex;gap:8px}.duration legend{font-size:8px;letter-spacing:.08em;color:#9cb6c7;margin-bottom:16px}.duration button{font-size:10px;background:transparent;color:#bed0dc;border:1px solid #516f81;padding:11px 16px;min-width:87px}.duration button[aria-pressed=true]{background:#dce9f1;color:#173c51;border-color:#dce9f1}.session-actions{display:flex;align-items:center;gap:25px}.start-button{background:#c6dce8;border:1px solid #c6dce8;color:#16394e;min-width:240px;display:flex;align-items:center;justify-content:space-between;padding:19px 20px;font-size:11px}.start-button>span{font-size:21px;line-height:1}.start-button:hover{background:#fff;border-color:#fff}.reset-button{background:none;border:0;padding:10px 0;font-size:10px;color:#bfd1dc}.practice-information .session-note{font-size:9px;color:#7e9cae;margin-top:22px}.breathing-visual{width:100%;aspect-ratio:1;position:relative;max-width:520px;margin:auto;--breath-scale:.88}.breath-aura{position:absolute;inset:14%;border-radius:50%;border:1px solid #9ab7c94d;background:radial-gradient(circle at 32% 24%,#a1c5d530,#648ea51f 44%,#183d5510 65%);box-shadow:inset -10px -20px 45px #081e321f,0 0 70px #97c3dc0a;transform:scale(var(--breath-scale));will-change:transform}.breath-aura:before,.breath-aura:after{content:'';position:absolute;border-radius:50%;border:1px solid #b3ccd61f;inset:-16%}.breath-aura:after{inset:8%;border-color:#b3ccd62b}.breath-track{width:100%;height:100%;position:absolute;inset:0;transform:rotate(-90deg);overflow:visible}.breath-track circle{fill:none;stroke-width:.55}.breath-track .track{stroke:#4b697a}.breath-track .elapsed{stroke:#b1d1e5;stroke-width:1.3;stroke-dasharray:1030.443;stroke-dashoffset:1030.443;stroke-linecap:round}.breath-core{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.phase-label{font-size:13px;letter-spacing:.02em;font-weight:300;position:relative;top:7px}.phase-count{font-size:clamp(55px,6.7vw,100px);letter-spacing:-.075em;font-weight:200;font-variant-numeric:tabular-nums;line-height:1.5}.phase-helper{font-size:7px;letter-spacing:.1em;color:#8fb0c4}.session-bottom{position:absolute;left:0;right:0;bottom:-24px;display:flex;justify-content:space-between;font-size:8px;color:#8fb0c4}.closing{padding-top:110px;padding-bottom:75px;text-align:center}.closing>.eyebrow{font-size:8px}.closing h2{font-size:clamp(54px,6.9vw,112px);margin:45px 0 30px}.closing>.under-link{margin:0 auto}.closing-line{display:flex;justify-content:center;align-items:center;gap:35px;margin-top:80px}.closing-line p{font-size:10px;opacity:.6}.closing-line .small-dot{width:3px;height:3px;margin:0;background:#9ab0be}footer{padding:30px 5%;border-top:1px solid #b6c6d1;display:flex;align-items:center;gap:50px}.footer-logo{font-size:40px;letter-spacing:.08em;font-weight:500}footer>div{display:flex;flex-direction:column;gap:6px;font-size:7px;letter-spacing:.1em;opacity:.65}footer>a:last-child{margin-left:auto;font-size:9px}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.js-ready [data-reveal]{opacity:0;transform:translateY(25px);transition:opacity .9s,transform .9s}.js-ready [data-reveal].visible{opacity:1;transform:none}@keyframes drop{from{top:-10px}to{top:36px}}@media(max-width:1000px){.site-header{gap:40px}.header-thought{display:none}.hero-copy{left:6%;top:29%;max-width:50%}.hero-copy h1{font-size:12vw}.water-caption{right:5%;top:22%}.section-space{padding-left:6%;padding-right:6%}.approach-layout{grid-template-columns:1.2fr .7fr;gap:8%}.approach h2{font-size:8vw}.three-words{font-size:3.8vw}.three-words>span:not(:last-child):after{margin-left:3vw;font-size:14px}.ritual-row{grid-template-columns:.13fr 1fr .5fr 45px}.ritual-name{font-size:42px}.practice{padding-left:6%;padding-right:6%}.practice-layout{grid-template-columns:1fr 1fr;gap:4%}.practice-information h2{font-size:6.2vw}.session-actions{gap:18px}.start-button{min-width:200px}.duration{gap:6px}.duration button{min-width:75px;padding:11px}.phase-helper{font-size:6px}.session-bottom{font-size:7px}.water-fallback{top:34%;right:6%;width:45vw}}@media(max-width:650px){html{scroll-padding-top:25px}.site-header{padding:27px 6%;gap:20px}.logo{font-size:21px}.site-header nav{gap:17px;font-size:9px}.site-header nav>a:first-child{display:none}.nav-practice{padding:9px 12px;gap:14px}.nav-practice span{font-size:16px}.water-story{height:195svh;min-height:1400px}.water-stage{min-height:700px}.hero-copy{top:19%;left:7%;max-width:88%}.hero-copy .eyebrow{font-size:7px}.hero-copy h1{font-size:22vw;line-height:1;margin:20px 0 22px}.hero-description{font-size:10px;line-height:1.8;max-width:230px}.round-link{font-size:9px;gap:15px;margin-top:20px}.round-link i{width:33px;height:33px;font-size:16px}.water-caption{right:6%;top:auto;bottom:13%;text-align:right}.water-caption>span{font-size:7px;margin-bottom:8px}.water-caption p{font-size:8px}.hero-foot{bottom:24px;left:6%;right:6%;font-size:6px}.hero-foot>span:nth-child(2){display:none}.scroll-guide{font-size:8px}.second-copy{top:19%;padding:0 7%}.second-copy .eyebrow{font-size:7px}.second-title{font-size:17vw;margin-top:24px;line-height:1.08}.water-fallback{width:67vw;top:51%;right:-5%}.water-fallback i{border-width:25px}.section-space{padding:60px 7%}.section-label{font-size:6px;padding-top:17px;letter-spacing:.05em}.approach-layout{display:block;margin:40px 0 45px}.approach h2{font-size:13vw}.approach-copy{max-width:270px;margin:32px 0 0 auto;font-size:11px;line-height:1.9}.approach-copy>p:first-child{font-size:16px}.approach-copy p+p{margin-top:16px}.under-link{font-size:9px}.three-words{font-size:4.1vw;padding:23px 0;letter-spacing:-.04em}.three-words>span:not(:last-child):after{margin-left:3vw;font-size:8px;top:-2px}.ritual-heading{display:block;margin:40px 0}.ritual-heading h2{font-size:14vw}.ritual-heading>p{font-size:10px;margin:24px 0 0}.ritual-row{grid-template-columns:27px 1fr 78px 30px;padding:24px 0}.ritual-row:hover,.ritual-row[aria-checked=true]{padding-left:10px;padding-right:10px}.ritual-number{font-size:7px;margin-top:8px}.ritual-name{font-size:33px}.ritual-name>span{font-size:8px;line-height:1.5;max-width:150px}.ritual-pattern{font-size:8px}.ritual-icon{width:28px;height:28px;font-size:16px}.ritual-bottom{align-items:start;gap:20px}.ritual-bottom>p{font-size:8px;max-width:210px}.ritual-bottom .under-link{font-size:8px;padding-top:0;gap:15px;min-width:95px}.practice{padding:35px 7% 75px}.practice-top .eyebrow,.practice-mode{font-size:6px;letter-spacing:.04em}.practice-layout{display:flex;flex-direction:column;margin-top:40px;gap:40px}.practice-information{width:100%}.practice-information h2{font-size:13vw}.practice-information>p{font-size:10px;margin-top:24px}.duration{margin:28px 0 22px}.duration legend{font-size:7px}.duration button{font-size:9px;min-width:80px;padding:11px 14px}.session-actions{gap:25px}.start-button{min-width:230px;font-size:10px}.reset-button{font-size:9px}.practice-information .session-note{font-size:8px;margin-top:18px}.breathing-visual{width:92%;max-width:350px}.phase-label{font-size:11px}.phase-count{font-size:70px}.phase-helper{font-size:6px}.session-bottom{bottom:-20px;font-size:7px}.closing{padding-top:65px;padding-bottom:50px}.closing>.eyebrow{font-size:7px}.closing h2{font-size:12.2vw;margin:35px 0 25px}.closing-line{gap:24px;margin-top:55px}.closing-line p{font-size:8px}footer{padding:24px 6%;gap:25px;flex-wrap:wrap}.footer-logo{font-size:32px}footer>div{font-size:5.5px;letter-spacing:.05em;gap:5px}footer>a:last-child{font-size:8px;margin-left:0}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.water-story{height:100svh;min-height:700px}.water-stage{position:relative}.second-copy{display:none}.water-caption{opacity:1!important}.hero-copy{opacity:1!important;transform:none!important}.scroll-guide i:after{animation:none}.breath-aura{transform:scale(.95)!important}.js-ready [data-reveal]{opacity:1;transform:none;transition:none}*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+@font-face {
+  font-family: Manrope;
+  src: url("assets/fonts/Manrope.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 35px;
+}
+body {
+  margin: 0;
+  background: #e7eef2;
+  color: #173c51;
+  font:
+    14px Manrope,
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  color: #edf4f7;
+  background: #173c51;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #426e84;
+  outline-offset: 6px;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+h1,
+h2 {
+  font-weight: 400;
+  letter-spacing: -0.075em;
+  line-height: 1.02;
+}
+h2 {
+  font-size: clamp(52px, 6.2vw, 102px);
+}
+h1 span,
+h2 span {
+  font-weight: 200;
+}
+button {
+  border-radius: 0;
+}
+.skip {
+  position: fixed;
+  top: -80px;
+  left: 12px;
+  z-index: 100;
+  background: #173c51;
+  color: #fff;
+  padding: 14px;
+}
+.skip:focus {
+  top: 12px;
+}
+.site-header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 35px 5%;
+  gap: 70px;
+}
+.logo {
+  font-size: 24px;
+  letter-spacing: 0.09em;
+  font-weight: 600;
+  line-height: 1;
+}
+.logo span {
+  font-size: 8px;
+  position: relative;
+  top: -13px;
+  margin-left: 4px;
+  letter-spacing: 0;
+}
+.header-thought {
+  font-size: 9px;
+  line-height: 1.6;
+  opacity: 0.65;
+}
+.site-header nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 11px;
+}
+.site-header nav > a:not(.nav-practice) {
+  border-bottom: 1px solid transparent;
+  padding: 7px 0;
+}
+.site-header nav > a:hover {
+  border-color: #173c51;
+}
+.nav-practice {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid #9cafbb;
+  padding: 12px 18px;
+}
+.nav-practice span {
+  font-size: 20px;
+}
+.water-story {
+  height: 225svh;
+  min-height: 1500px;
+}
+.water-stage {
+  height: 100svh;
+  min-height: 650px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background: radial-gradient(
+    ellipse at 75% 40%,
+    #f6f9fa 0,
+    #e7eef2 55%,
+    #dbe6ed 100%
+  );
+}
+#water-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+#water-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero-copy {
+  position: absolute;
+  z-index: 3;
+  left: 8%;
+  top: 27%;
+  max-width: 590px;
+  will-change: transform, opacity;
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  line-height: 1.7;
+  font-weight: 500;
+}
+.small-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-right: 9px;
+}
+.hero-copy h1 {
+  font-size: clamp(88px, 10.1vw, 165px);
+  margin: 30px 0 32px;
+  letter-spacing: -0.085em;
+}
+.hero-description {
+  font-size: 12px;
+  line-height: 1.9;
+  opacity: 0.7;
+}
+.round-link {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 34px;
+  width: max-content;
+  font-size: 12px;
+  min-height: 44px;
+}
+.round-link i {
+  font-style: normal;
+  border: 1px solid #9cafbb;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 19px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.round-link:hover i {
+  background: #173c51;
+  color: #fff;
+}
+.water-caption {
+  position: absolute;
+  right: 6%;
+  top: 25%;
+  z-index: 3;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+.water-caption > span {
+  display: block;
+  opacity: 0.55;
+  margin-bottom: 18px;
+}
+.water-caption p {
+  line-height: 1.7;
+  letter-spacing: 0;
+  font-size: 12px;
+}
+.hero-foot {
+  position: absolute;
+  bottom: 30px;
+  left: 5%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 0.07em;
+  z-index: 3;
+}
+.scroll-guide {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  letter-spacing: 0;
+}
+.scroll-guide i {
+  display: block;
+  width: 1px;
+  height: 33px;
+  background: #9cafbb;
+  position: relative;
+  overflow: hidden;
+}
+.scroll-guide i:after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 1px;
+  background: #173c51;
+  top: 0;
+  animation: drop 2s infinite;
+}
+.second-copy {
+  position: absolute;
+  inset: 22% 0 auto;
+  text-align: center;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(40px);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+.second-title {
+  font-size: clamp(65px, 8.7vw, 140px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.075em;
+  margin-top: 22px;
+}
+.second-title span {
+  font-weight: 200;
+}
+.water-fallback {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 38vw;
+  aspect-ratio: 1;
+  z-index: 1;
+  transform: rotate(-28deg);
+}
+.water-fallback i {
+  position: absolute;
+  inset: 7%;
+  border: 40px solid #88aebf;
+  border-radius: 50%;
+  box-shadow:
+    inset 12px -7px 18px #315a72,
+    12px 20px 40px #7798aa50,
+    -7px -7px 18px #fff9;
+}
+.water-fallback i:nth-child(2) {
+  inset: 17%;
+  border-width: 8px;
+  opacity: 0.3;
+}
+.water-fallback i:nth-child(3) {
+  inset: 27%;
+  border-width: 3px;
+  opacity: 0.2;
+}
+.has-webgl .water-fallback {
+  display: none;
+}
+.section-space {
+  padding: 100px 8%;
+}
+.section-label {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #afc0cb;
+  padding-top: 20px;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+.approach {
+  background: #d4e1e9;
+}
+.approach-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.6fr;
+  gap: 13%;
+  align-items: end;
+  margin: 70px 0 95px;
+}
+.approach h2 {
+  font-size: clamp(60px, 6.8vw, 114px);
+}
+.approach-copy {
+  max-width: 280px;
+  font-size: 12px;
+  line-height: 1.9;
+  padding-bottom: 4px;
+}
+.approach-copy p + p {
+  margin-top: 18px;
+}
+.approach-copy > p:first-child {
+  font-size: 17px;
+  letter-spacing: -0.025em;
+  line-height: 1.55;
+}
+.under-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #839eae;
+  font-size: 12px;
+  padding: 16px 0;
+  margin-top: 25px;
+  gap: 30px;
+  max-width: 100%;
+  width: max-content;
+  min-height: 44px;
+}
+.under-link span {
+  font-size: 21px;
+  line-height: 0.8;
+  transition: transform 0.2s;
+}
+.under-link:hover span {
+  transform: translate(3px, -3px);
+}
+.three-words {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: clamp(24px, 3.3vw, 52px);
+  font-weight: 300;
+  letter-spacing: -0.06em;
+  border-top: 1px solid #afc0cb;
+  border-bottom: 1px solid #afc0cb;
+  padding: 30px 0;
+}
+.three-words > span:not(:last-child):after {
+  content: "✳";
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 5vw;
+  position: relative;
+  top: -5px;
+  font-weight: 200;
+}
+.rituals {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.ritual-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 60px 0 65px;
+  gap: 30px;
+}
+.ritual-heading > p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin-right: 4%;
+  margin-bottom: 7px;
+}
+.ritual-list {
+  border-top: 1px solid #afc0cb;
+}
+.ritual-row {
+  display: grid;
+  grid-template-columns: 0.15fr 1fr 0.65fr 50px;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #afc0cb;
+  background: none;
+  padding: 32px 15px 32px 0;
+  transition:
+    background 0.3s,
+    padding 0.3s;
+}
+.ritual-row:hover,
+.ritual-row[aria-checked="true"] {
+  background: #dbe6ec;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.ritual-number {
+  font-size: 9px;
+  opacity: 0.6;
+  align-self: start;
+  margin-top: 10px;
+}
+.ritual-name {
+  font-size: 48px;
+  letter-spacing: -0.06em;
+  line-height: 1.1;
+  font-weight: 300;
+}
+.ritual-name > span {
+  font-size: 12px;
+  letter-spacing: 0;
+  display: block;
+  line-height: 1.8;
+  margin-top: 9px;
+}
+.ritual-pattern {
+  font-size: 12px;
+  line-height: 1.8;
+  opacity: 0.65;
+}
+.ritual-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #afc0cb;
+  border-radius: 50%;
+  font-size: 21px;
+}
+.ritual-row[aria-checked="true"] .ritual-icon {
+  background: #173c51;
+  border-color: #173c51;
+  color: #e7eef2;
+  transform: rotate(45deg);
+}
+.ritual-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 25px;
+  gap: 30px;
+}
+.ritual-bottom > p {
+  font-size: 12px;
+  line-height: 1.8;
+  opacity: 0.65;
+}
+.ritual-bottom .under-link {
+  margin: 0;
+  font-size: 12px;
+  min-height: 44px;
+}
+.practice {
+  background: #102f42;
+  color: #e3edf2;
+  padding: 45px 8% 90px;
+  overflow: hidden;
+}
+.practice-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #416070;
+  padding-bottom: 20px;
+}
+.practice-top .eyebrow,
+.practice-mode {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+.practice-mode {
+  color: #a9c5d6;
+}
+.practice-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  align-items: center;
+  margin-top: 65px;
+}
+.practice-information h2 {
+  font-size: clamp(52px, 5.5vw, 91px);
+}
+.practice-information > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #abc1cf;
+  margin-top: 28px;
+}
+.duration {
+  border: 0;
+  padding: 0;
+  margin: 40px 0 28px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.duration legend {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #9cb6c7;
+  margin-bottom: 16px;
+}
+.duration button {
+  font-size: 12px;
+  background: transparent;
+  color: #bed0dc;
+  border: 1px solid #516f81;
+  padding: 11px 16px;
+  min-width: 87px;
+  min-height: 44px;
+}
+.duration button[aria-pressed="true"] {
+  background: #dce9f1;
+  color: #173c51;
+  border-color: #dce9f1;
+}
+.session-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.start-button {
+  background: #c6dce8;
+  border: 1px solid #c6dce8;
+  color: #16394e;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 20px;
+  font-size: 12px;
+  min-height: 44px;
+}
+.start-button > span {
+  font-size: 21px;
+  line-height: 1;
+}
+.start-button:hover {
+  background: #fff;
+  border-color: #fff;
+}
+.reset-button {
+  background: none;
+  border: 0;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #bfd1dc;
+  min-height: 44px;
+}
+.practice-information .session-note {
+  font-size: 12px;
+  color: #7e9cae;
+  margin-top: 22px;
+}
+.breathing-visual {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+  max-width: 520px;
+  margin: auto;
+  --breath-scale: 0.88;
+}
+.breath-aura {
+  position: absolute;
+  inset: 14%;
+  border-radius: 50%;
+  border: 1px solid #9ab7c94d;
+  background: radial-gradient(
+    circle at 32% 24%,
+    #a1c5d530,
+    #648ea51f 44%,
+    #183d5510 65%
+  );
+  box-shadow:
+    inset -10px -20px 45px #081e321f,
+    0 0 70px #97c3dc0a;
+  transform: scale(var(--breath-scale));
+  will-change: transform;
+}
+.breath-aura:before,
+.breath-aura:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #b3ccd61f;
+  inset: -16%;
+}
+.breath-aura:after {
+  inset: 8%;
+  border-color: #b3ccd62b;
+}
+.breath-track {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+.breath-track circle {
+  fill: none;
+  stroke-width: 0.55;
+}
+.breath-track .track {
+  stroke: #4b697a;
+}
+.breath-track .elapsed {
+  stroke: #b1d1e5;
+  stroke-width: 1.3;
+  stroke-dasharray: 1030.443;
+  stroke-dashoffset: 1030.443;
+  stroke-linecap: round;
+}
+.breath-core {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.phase-label {
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  position: relative;
+  top: 7px;
+}
+.phase-count {
+  font-size: clamp(55px, 6.7vw, 100px);
+  letter-spacing: -0.075em;
+  font-weight: 200;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+}
+.phase-helper {
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  color: #8fb0c4;
+}
+.session-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #8fb0c4;
+}
+.closing {
+  padding-top: 110px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+.closing > .eyebrow {
+  font-size: 8px;
+}
+.closing h2 {
+  font-size: clamp(54px, 6.9vw, 112px);
+  margin: 45px 0 30px;
+}
+.closing > .under-link {
+  margin: 0 auto;
+}
+.closing-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 80px;
+}
+.closing-line p {
+  font-size: 10px;
+  opacity: 0.6;
+}
+.closing-line .small-dot {
+  width: 3px;
+  height: 3px;
+  margin: 0;
+  background: #9ab0be;
+}
+footer {
+  padding: 30px 5%;
+  border-top: 1px solid #b6c6d1;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.footer-logo {
+  font-size: 40px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  opacity: 0.65;
+}
+footer > a:last-child {
+  margin-left: auto;
+  font-size: 9px;
+}
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.js-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 0.9s,
+    transform 0.9s;
+}
+.js-ready [data-reveal].visible {
+  opacity: 1;
+  transform: none;
+}
+@keyframes drop {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 36px;
+  }
+}
+@media (max-width: 1000px) {
+  .site-header {
+    gap: 40px;
+  }
+  .header-thought {
+    display: none;
+  }
+  .hero-copy {
+    left: 6%;
+    top: 29%;
+    max-width: 50%;
+  }
+  .hero-copy h1 {
+    font-size: 12vw;
+  }
+  .water-caption {
+    right: 5%;
+    top: 22%;
+  }
+  .section-space {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .approach-layout {
+    grid-template-columns: 1.2fr 0.7fr;
+    gap: 8%;
+  }
+  .approach h2 {
+    font-size: 8vw;
+  }
+  .three-words {
+    font-size: 3.8vw;
+  }
+  .three-words > span:not(:last-child):after {
+    margin-left: 3vw;
+    font-size: 14px;
+  }
+  .ritual-row {
+    grid-template-columns: 0.13fr 1fr 0.5fr 45px;
+  }
+  .ritual-name {
+    font-size: 42px;
+  }
+  .practice {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .practice-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 4%;
+  }
+  .practice-information h2 {
+    font-size: 6.2vw;
+  }
+  .session-actions {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .start-button {
+    min-width: 0;
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .duration {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .duration button {
+    min-width: 75px;
+    padding: 11px;
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .phase-helper {
+    font-size: 6px;
+  }
+  .session-bottom {
+    font-size: 7px;
+  }
+  .water-fallback {
+    top: 34%;
+    right: 6%;
+    width: 45vw;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    scroll-padding-top: 25px;
+  }
+  .site-header {
+    padding: 27px 6%;
+    gap: 20px;
+  }
+  .logo {
+    font-size: 21px;
+  }
+  .site-header nav {
+    gap: 17px;
+    font-size: 9px;
+  }
+  .site-header nav > a:first-child {
+    display: none;
+  }
+  .nav-practice {
+    padding: 9px 12px;
+    gap: 14px;
+  }
+  .nav-practice span {
+    font-size: 16px;
+  }
+  .water-story {
+    height: 195svh;
+    min-height: 1400px;
+  }
+  .water-stage {
+    min-height: 700px;
+  }
+  .hero-copy {
+    top: 19%;
+    left: 7%;
+    max-width: 88%;
+  }
+  .hero-copy .eyebrow {
+    font-size: 7px;
+  }
+  .hero-copy h1 {
+    font-size: 22vw;
+    line-height: 1;
+    margin: 20px 0 22px;
+  }
+  .hero-description {
+    font-size: 12px;
+    line-height: 1.8;
+    max-width: 230px;
+  }
+  .round-link {
+    font-size: 12px;
+    gap: 15px;
+    margin-top: 20px;
+    min-height: 44px;
+  }
+  .round-link i {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+  .water-caption {
+    right: 6%;
+    top: auto;
+    bottom: 13%;
+    text-align: right;
+  }
+  .water-caption > span {
+    font-size: 7px;
+    margin-bottom: 8px;
+  }
+  .water-caption p {
+    font-size: 12px;
+  }
+  .hero-foot {
+    bottom: 24px;
+    left: 6%;
+    right: 6%;
+    font-size: 6px;
+  }
+  .hero-foot > span:nth-child(2) {
+    display: none;
+  }
+  .scroll-guide {
+    font-size: 8px;
+  }
+  .second-copy {
+    top: 19%;
+    padding: 0 7%;
+  }
+  .second-copy .eyebrow {
+    font-size: 7px;
+  }
+  .second-title {
+    font-size: 17vw;
+    margin-top: 24px;
+    line-height: 1.08;
+  }
+  .water-fallback {
+    width: 67vw;
+    top: 51%;
+    right: -5%;
+  }
+  .water-fallback i {
+    border-width: 25px;
+  }
+  .section-space {
+    padding: 60px 7%;
+  }
+  .section-label {
+    font-size: 6px;
+    padding-top: 17px;
+    letter-spacing: 0.05em;
+  }
+  .approach-layout {
+    display: block;
+    margin: 40px 0 45px;
+  }
+  .approach h2 {
+    font-size: 13vw;
+  }
+  .approach-copy {
+    max-width: 270px;
+    margin: 32px 0 0 auto;
+    font-size: 11px;
+    line-height: 1.9;
+  }
+  .approach-copy > p:first-child {
+    font-size: 16px;
+  }
+  .approach-copy p + p {
+    margin-top: 16px;
+  }
+  .under-link {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .three-words {
+    font-size: 4.1vw;
+    padding: 23px 0;
+    letter-spacing: -0.04em;
+  }
+  .three-words > span:not(:last-child):after {
+    margin-left: 3vw;
+    font-size: 8px;
+    top: -2px;
+  }
+  .ritual-heading {
+    display: block;
+    margin: 40px 0;
+  }
+  .ritual-heading h2 {
+    font-size: 14vw;
+  }
+  .ritual-heading > p {
+    font-size: 12px;
+    margin: 24px 0 0;
+  }
+  .ritual-row {
+    grid-template-columns: 27px 1fr 78px 30px;
+    padding: 24px 0;
+  }
+  .ritual-row:hover,
+  .ritual-row[aria-checked="true"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ritual-number {
+    font-size: 7px;
+    margin-top: 8px;
+  }
+  .ritual-name {
+    font-size: 33px;
+  }
+  .ritual-name > span {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 150px;
+  }
+  .ritual-pattern {
+    font-size: 12px;
+  }
+  .ritual-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+  .ritual-bottom {
+    align-items: start;
+    gap: 20px;
+  }
+  .ritual-bottom > p {
+    font-size: 12px;
+    max-width: 210px;
+  }
+  .ritual-bottom .under-link {
+    font-size: 12px;
+    padding-top: 0;
+    gap: 15px;
+    min-width: 95px;
+    min-height: 44px;
+  }
+  .practice {
+    padding: 35px 7% 75px;
+  }
+  .practice-top .eyebrow,
+  .practice-mode {
+    font-size: 6px;
+    letter-spacing: 0.04em;
+  }
+  .practice-layout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 40px;
+  }
+  .practice-information {
+    width: 100%;
+  }
+  .practice-information h2 {
+    font-size: 13vw;
+  }
+  .practice-information > p {
+    font-size: 12px;
+    margin-top: 24px;
+  }
+  .duration {
+    margin: 28px 0 22px;
+    flex-wrap: wrap;
+  }
+  .duration legend {
+    font-size: 7px;
+  }
+  .duration button {
+    font-size: 12px;
+    min-width: 80px;
+    padding: 11px 14px;
+    min-height: 44px;
+  }
+  .session-actions {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .start-button {
+    min-width: 0;
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .reset-button {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .practice-information .session-note {
+    font-size: 12px;
+    margin-top: 18px;
+  }
+  .breathing-visual {
+    width: 92%;
+    max-width: 350px;
+  }
+  .phase-label {
+    font-size: 11px;
+  }
+  .phase-count {
+    font-size: 70px;
+  }
+  .phase-helper {
+    font-size: 6px;
+  }
+  .session-bottom {
+    bottom: -20px;
+    font-size: 7px;
+  }
+  .closing {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+  .closing > .eyebrow {
+    font-size: 7px;
+  }
+  .closing h2 {
+    font-size: 12.2vw;
+    margin: 35px 0 25px;
+  }
+  .closing-line {
+    gap: 24px;
+    margin-top: 55px;
+  }
+  .closing-line p {
+    font-size: 8px;
+  }
+  footer {
+    padding: 24px 6%;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    font-size: 32px;
+  }
+  footer > div {
+    font-size: 5.5px;
+    letter-spacing: 0.05em;
+    gap: 5px;
+  }
+  footer > a:last-child {
+    font-size: 8px;
+    margin-left: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .water-story {
+    height: 100svh;
+    min-height: 700px;
+  }
+  .water-stage {
+    position: relative;
+  }
+  .second-copy {
+    display: none;
+  }
+  .water-caption {
+    opacity: 1 !important;
+  }
+  .hero-copy {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .scroll-guide i:after {
+    animation: none;
+  }
+  .breath-aura {
+    transform: scale(0.95) !important;
+  }
+  .js-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *:before,
+  *:after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
 /* An overhead water landscape replaces the isolated product-object composition. */
-.water-story{height:210svh;min-height:1300px}.water-stage{background:radial-gradient(ellipse at 50% 20%,#f6f9fb,#e2ecf2 65%,#cfdee7)}#water-canvas{inset:0}.hero-copy{left:4%;right:4%;top:17%;max-width:none;text-align:center}.hero-copy .eyebrow{font-size:8px;letter-spacing:.16em}.hero-copy h1{font-size:clamp(84px,11.3vw,180px);line-height:1.04;letter-spacing:-.08em;margin:18px 0 16px}.hero-copy h1 span{display:inline}.hero-description{font-size:11px;line-height:1.8;opacity:.75}.hero-copy .round-link{display:inline-flex;margin:20px auto 0;font-size:9px}.hero-copy .round-link i{width:32px;height:32px;font-size:16px}.water-caption{top:auto;right:6%;bottom:15%;text-align:right}.water-caption>span{font-size:7px;margin-bottom:10px}.water-caption p{font-size:9px}.ripple-button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;background:#e9f1f6d9;border:1px solid #92b2c5;font-size:9px;padding:11px 13px;margin-top:15px}.ripple-button span{font-size:16px;line-height:1}.ripple-button:hover{background:#173c51;color:#f3f8fa}.second-copy{top:18%;left:4%;right:4%}.second-title{font-size:clamp(95px,13vw,200px);line-height:.98;margin-top:20px}.water-fallback{left:8%;right:8%;top:auto;bottom:5%;width:84%;height:48%;aspect-ratio:auto;transform:none;border-radius:50%;border:10px solid #d4e3eb;background:radial-gradient(ellipse at 40% 30%,#c1e0e9,#78a8bd);box-shadow:none}.water-fallback i{inset:12%;border:1px solid #7fa8ba;border-radius:50%;box-shadow:none}.water-fallback i:nth-child(2){inset:25%;border-width:1px;opacity:.55}.water-fallback i:nth-child(3){inset:38%;border-width:1px;opacity:.4}.hero-foot .scene-label{font-size:7px}.scroll-guide i:after{animation:none}@media(max-width:1000px){.hero-copy{top:18%;max-width:none;left:4%;right:4%}.hero-copy h1{font-size:11.5vw}.water-caption{top:auto;bottom:14%;right:5%}}@media(max-width:650px){.water-story{height:195svh;min-height:1200px}.hero-copy{top:17%;left:6%;right:6%;max-width:none}.hero-copy .eyebrow{font-size:6px;letter-spacing:.1em}.hero-copy h1{font-size:22vw;line-height:.94;margin:20px 0 18px}.hero-copy h1 span{display:block}.hero-description{font-size:9px;line-height:1.8;max-width:none}.hero-copy .round-link{font-size:8px;gap:14px;margin-top:15px}.hero-copy .round-link i{width:28px;height:28px;font-size:14px}.water-caption{bottom:12%;right:6%;top:auto}.water-caption>span{font-size:6px}.water-caption p{font-size:8px}.ripple-button{font-size:8px;gap:19px;padding:9px 11px;margin-top:11px}.ripple-button span{font-size:14px}.second-copy{top:19%;padding:0}.second-title{font-size:24vw;line-height:1;margin-top:22px}.water-fallback{left:-15%;right:auto;width:130%;bottom:17%;height:31%;border-width:7px}.hero-foot .scene-label{font-size:6px}}@media(prefers-reduced-motion:reduce){.water-story{height:100svh;min-height:700px}.hero-copy{visibility:visible!important}.ripple-button{display:none}.water-caption p{max-width:120px}.water-caption p:after{content:none}.water-caption>span{display:none}}
-.hero-copy .hero-description{color:#0b2532;opacity:1;font-weight:500}.hero-copy .round-link{color:#0b2532;font-weight:600}.hero-copy .round-link i{border-color:#244d63;background:#edf4f8}.hero-copy .round-link:hover i{background:#173c51;color:#fff}
+.water-story {
+  height: 210svh;
+  min-height: 1300px;
+}
+.water-stage {
+  background: radial-gradient(
+    ellipse at 50% 20%,
+    #f6f9fb,
+    #e2ecf2 65%,
+    #cfdee7
+  );
+}
+#water-canvas {
+  inset: 0;
+}
+.hero-copy {
+  left: 4%;
+  right: 4%;
+  top: 17%;
+  max-width: none;
+  text-align: center;
+}
+.hero-copy .eyebrow {
+  font-size: 8px;
+  letter-spacing: 0.16em;
+}
+.hero-copy h1 {
+  font-size: clamp(84px, 11.3vw, 180px);
+  line-height: 1.04;
+  letter-spacing: -0.08em;
+  margin: 18px 0 16px;
+}
+.hero-copy h1 span {
+  display: inline;
+}
+.hero-description {
+  font-size: 12px;
+  line-height: 1.8;
+  opacity: 0.75;
+}
+.hero-copy .round-link {
+  display: inline-flex;
+  margin: 20px auto 0;
+  font-size: 12px;
+  min-height: 44px;
+}
+.hero-copy .round-link i {
+  width: 44px;
+  height: 44px;
+  font-size: 16px;
+}
+.water-caption {
+  top: auto;
+  right: 6%;
+  bottom: 15%;
+  text-align: right;
+}
+.water-caption > span {
+  font-size: 7px;
+  margin-bottom: 10px;
+}
+.water-caption p {
+  font-size: 12px;
+}
+.ripple-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #e9f1f6d9;
+  border: 1px solid #92b2c5;
+  font-size: 12px;
+  padding: 11px 13px;
+  margin-top: 15px;
+  min-height: 44px;
+}
+.ripple-button span {
+  font-size: 16px;
+  line-height: 1;
+}
+.ripple-button:hover {
+  background: #173c51;
+  color: #f3f8fa;
+}
+.second-copy {
+  top: 18%;
+  left: 4%;
+  right: 4%;
+}
+.second-title {
+  font-size: clamp(95px, 13vw, 200px);
+  line-height: 0.98;
+  margin-top: 20px;
+}
+.water-fallback {
+  left: 8%;
+  right: 8%;
+  top: auto;
+  bottom: 5%;
+  width: 84%;
+  height: 48%;
+  aspect-ratio: auto;
+  transform: none;
+  border-radius: 50%;
+  border: 10px solid #d4e3eb;
+  background: radial-gradient(ellipse at 40% 30%, #c1e0e9, #78a8bd);
+  box-shadow: none;
+}
+.water-fallback i {
+  inset: 12%;
+  border: 1px solid #7fa8ba;
+  border-radius: 50%;
+  box-shadow: none;
+}
+.water-fallback i:nth-child(2) {
+  inset: 25%;
+  border-width: 1px;
+  opacity: 0.55;
+}
+.water-fallback i:nth-child(3) {
+  inset: 38%;
+  border-width: 1px;
+  opacity: 0.4;
+}
+.hero-foot .scene-label {
+  font-size: 7px;
+}
+.scroll-guide i:after {
+  animation: none;
+}
+@media (max-width: 1000px) {
+  .hero-copy {
+    top: 18%;
+    max-width: none;
+    left: 4%;
+    right: 4%;
+  }
+  .hero-copy h1 {
+    font-size: 11.5vw;
+  }
+  .water-caption {
+    top: auto;
+    bottom: 14%;
+    right: 5%;
+  }
+}
+@media (max-width: 650px) {
+  .water-story {
+    height: 195svh;
+    min-height: 1200px;
+  }
+  .hero-copy {
+    top: 17%;
+    left: 6%;
+    right: 6%;
+    max-width: none;
+  }
+  .hero-copy .eyebrow {
+    font-size: 6px;
+    letter-spacing: 0.1em;
+  }
+  .hero-copy h1 {
+    font-size: 22vw;
+    line-height: 0.94;
+    margin: 20px 0 18px;
+  }
+  .hero-copy h1 span {
+    display: block;
+  }
+  .hero-description {
+    font-size: 12px;
+    line-height: 1.8;
+    max-width: none;
+  }
+  .hero-copy .round-link {
+    font-size: 12px;
+    gap: 14px;
+    margin-top: 15px;
+    min-height: 44px;
+  }
+  .hero-copy .round-link i {
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+  }
+  .water-caption {
+    bottom: 12%;
+    right: 6%;
+    top: auto;
+  }
+  .water-caption > span {
+    font-size: 6px;
+  }
+  .water-caption p {
+    font-size: 12px;
+  }
+  .ripple-button {
+    font-size: 12px;
+    gap: 19px;
+    padding: 9px 11px;
+    margin-top: 11px;
+    min-height: 44px;
+  }
+  .ripple-button span {
+    font-size: 14px;
+  }
+  .second-copy {
+    top: 19%;
+    padding: 0;
+  }
+  .second-title {
+    font-size: 24vw;
+    line-height: 1;
+    margin-top: 22px;
+  }
+  .water-fallback {
+    left: -15%;
+    right: auto;
+    width: 130%;
+    bottom: 17%;
+    height: 31%;
+    border-width: 7px;
+  }
+  .hero-foot .scene-label {
+    font-size: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .water-story {
+    height: 100svh;
+    min-height: 700px;
+  }
+  .hero-copy {
+    visibility: visible !important;
+  }
+  .ripple-button {
+    display: none;
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .water-caption p {
+    max-width: 120px;
+    font-size: 12px;
+  }
+  .water-caption p:after {
+    content: none;
+  }
+  .water-caption > span {
+    display: none;
+  }
+}
+.hero-copy .hero-description {
+  color: #0b2532;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 12px;
+}
+.hero-copy .round-link {
+  color: #0b2532;
+  font-weight: 600;
+  font-size: 12px;
+  min-height: 44px;
+}
+.hero-copy .round-link i {
+  border-color: #244d63;
+  background: #edf4f8;
+  width: 44px;
+  height: 44px;
+}
+.hero-copy .round-link:hover i {
+  background: #173c51;
+  color: #fff;
+}
+
+/* Mobile reading and touch layout. */
+@media (max-width: 650px) {
+  .site-header nav {
+    font-size: 12px;
+    gap: 10px;
+  }
+  .nav-practice {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .hero-copy .hero-description {
+    font-size: 12px;
+  }
+  .duration button {
+    min-width: 72px;
+  }
+  .session-actions .start-button {
+    flex: 1;
+    min-width: 200px;
+  }
+  .reset-button {
+    padding: 10px 16px;
+  }
+  .ritual-row {
+    grid-template-columns: 20px 1fr 70px 24px;
+    gap: 10px;
+  }
+  .ritual-pattern {
+    font-size: 11px;
+  }
+  .practice-information > p,
+  .approach-copy {
+    font-size: 14px;
+  }
+  .water-caption p {
+    max-width: 150px;
+  }
+}
+@media (max-height: 700px) and (max-width: 650px) {
+  .water-stage {
+    min-height: 0;
+  }
+  .hero-copy {
+    top: 17%;
+  }
+  .hero-copy h1 {
+    font-size: 18vw;
+    margin: 14px 0;
+  }
+  .hero-copy .round-link {
+    margin-top: 8px;
+  }
+  .water-caption {
+    bottom: 55px;
+  }
+  .water-caption > span,
+  .water-caption p {
+    display: none;
+  }
+  .ripple-button {
+    margin-top: 0;
+  }
+  .hero-foot {
+    bottom: 15px;
+  }
+  .second-title {
+    font-size: 20vw;
+  }
+}
+@media (max-height: 500px) and (min-width: 651px) {
+  .water-stage {
+    min-height: 0;
+  }
+  .site-header {
+    padding: 15px 5%;
+  }
+  .hero-copy {
+    top: 24%;
+    left: 6%;
+    right: auto;
+    max-width: 48%;
+    text-align: left;
+  }
+  .hero-copy h1 {
+    font-size: 16vh;
+    margin: 10px 0;
+  }
+  .hero-copy .hero-description {
+    font-size: 12px;
+  }
+  .hero-copy .round-link {
+    margin-top: 6px;
+    justify-content: flex-start;
+  }
+  .water-caption {
+    right: 5%;
+    bottom: 55px;
+    top: auto;
+  }
+  .water-caption > span {
+    display: none;
+  }
+  .hero-foot {
+    bottom: 12px;
+  }
+  .second-copy {
+    top: 28%;
+  }
+  .second-title {
+    font-size: 19vh;
+  }
+}
