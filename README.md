@@ -11,3 +11,7 @@ Reduced motion presents a still water composition and a non-scaling breathing gu
 For an independent GitHub Pages repository, put this directory at the repository root. Paths are relative and `.nojekyll` is included. See `assets/LICENSES.md` for font and Three.js licences.
 
 Runtime diagnostics are available on `document.documentElement.dataset`: `renderFrames` counts real `renderer.render()` calls, `drawCalls` and `triangles` are from Three.js render info, `renderDpr` is actual pixel ratio and `renderMode` is active, idle, hidden or offscreen. They update every 15 active frames or at a mode change/pause.
+
+## iPhone Safari composition, October2026
+
+The mobile experience now reserves explicit photographic or live-model frames in normal document flow. It does not move the hero object into arbitrary gaps between text blocks. Header, content, forms and footer share the mobile reading grid; desktop retains its cinematic composition. Exact local static font weights avoid variable-default differences across browser engines. Relevant touch interactions, portrait/landscape transitions and live scene visibility were checked in Playwright WebKit. This is browser emulation, not a physical iPhone test.

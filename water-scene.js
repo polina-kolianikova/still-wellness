@@ -180,8 +180,9 @@ export function initWaterExperience(reduced) {
     const rect = story.getBoundingClientRect();
     progress = reduced.matches
       ? 0
-      : clamp(-rect.top / Math.max(1, story.offsetHeight - innerHeight));
-    const out = smooth((progress - 0.06) / 0.28);
+      : clamp(-rect.top / Math.max(1, story.offsetHeight - stage.clientHeight));
+    const landscape = matchMedia("(max-height: 500px) and (pointer: coarse)").matches;
+    const out = landscape ? 0 : smooth((progress - 0.06) / 0.28);
     const copy = $(".hero-copy");
     copy.style.opacity = String(1 - out);
     copy.style.transform = `translate3d(0,${-out * 40}px,0)`;

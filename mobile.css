@@ -1,0 +1,64 @@
+/* iPhone composition: content owns its height; visual stages never resize during browser-chrome changes. */
+@media (max-width: 700px), (max-height: 500px) and (pointer: coarse) {
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 88px; }
+  body { overflow-wrap: break-word; }
+  button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+  button, select, input, textarea { touch-action: manipulation; }
+  input, select, textarea { font-size: 16px; }
+  header, .site-header { padding-top: max(18px, env(safe-area-inset-top)); }
+  footer { padding-bottom: max(28px, env(safe-area-inset-bottom)); }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  dialog { overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+}
+
+@media (max-width: 700px), (max-height: 500px) and (pointer: coarse) {
+  .water-story { height: 170svh; min-height: 0; }
+  .water-stage { height: 100svh; min-height: 0; }
+  .hero-copy { top: 17%; left: 6%; right: 6%; }
+  .hero-copy h1 { font-size: clamp(58px, 17vw, 76px); line-height: 1.05; margin: 18px 0; }
+  .hero-copy .eyebrow { font-size: 11px; }
+  .hero-copy .hero-description { font-size: 16px; line-height: 1.55; }
+  .hero-copy .round-link { font-size: 15px; margin-top: 16px; }
+  .water-caption { bottom: max(70px, calc(env(safe-area-inset-bottom) + 58px)); right: 6%; }
+  .water-caption > span { display: none; }
+  .water-caption p { display: block; font-size: 13px; line-height: 1.5; }
+  .ripple-button { margin-top: 8px; font-size: 14px; }
+  .hero-foot { bottom: max(16px, env(safe-area-inset-bottom)); }
+  .hero-foot .scene-label, .scroll-guide { font-size: 11px; }
+  .second-copy { top: 20%; }
+  .second-title { font-size: clamp(58px, 17vw, 78px); line-height: 1.05; }
+  .approach-copy, .practice-information > p { max-width: none; font-size: 16px; line-height: 1.65; }
+  .approach-copy { margin-left: 0; }
+  .section-label { font-size: 11px; }
+  .ritual-row { grid-template-columns: 1fr auto; gap: 12px; }
+  .ritual-row > span:first-child { display: none; }
+  .ritual-pattern { font-size: 13px; }
+  .ritual-name { font-size: 32px; }
+  .ritual-icon { display: none; }
+  .ritual-name > span { font-size: 14px; }
+  footer > div, footer > a:last-child { font-size: 12px; line-height: 1.6; }
+  .practice-top { flex-wrap: wrap; gap: 16px; }
+  .practice-mode { font-size: 12px; line-height: 1.6; }
+  .session-actions { flex-wrap: wrap; }
+  .session-actions .start-button { min-width: 0; font-size: 15px; }
+  .duration button { font-size: 15px; }
+  .practice-disclaimer, .footer-bottom, .footer-bottom p { font-size: 12px; line-height: 1.6; }
+}
+@media (max-height: 730px) and (max-width: 700px) {
+  .hero-copy { top: 16%; }
+  .hero-copy h1 { font-size: 15.5vw; margin: 12px 0; }
+  .hero-copy .hero-description { font-size: 15px; }
+  .water-caption p { max-width: 185px; font-size: 12px; }
+  .hero-foot .scene-label { max-width: 150px; text-align: right; }
+}
+@media (max-height: 500px) and (pointer: coarse) {
+  .water-story { height: auto; }
+  .water-stage { position: relative; height: 520px; }
+  .hero-copy { top: 100px; width: 56%; text-align: left; }
+  .hero-copy h1 { font-size: 56px; }
+  .hero-copy h1 span { display: inline; }
+  .hero-copy .hero-description { font-size: 16px; }
+  .water-caption { bottom: 70px; }
+  .second-copy { display: none; }
+}
+@media (prefers-reduced-motion: reduce) and (max-width: 700px) { .water-story { height: auto; min-height: 0; } .water-stage { position: relative; } }
